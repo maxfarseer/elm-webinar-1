@@ -11,12 +11,16 @@ import Html.Events exposing (onClick)
 
 
 type alias Model =
-    { count : Int }
+    { count : Int
+    , status : Bool
+    }
 
 
 init : Model
 init =
-    { count = 0 }
+    { count = 0
+    , status = False
+    }
 
 
 
@@ -59,6 +63,7 @@ view model =
             , button [ onClick Decrement ] [ text "-1" ]
             , hr [] []
             , button [ onClick Reset, disabled (ifResetDisabled model.count) ] [ text "reset" ]
+            , renderDiv model.status
             ]
         ]
 
@@ -70,6 +75,15 @@ ifResetDisabled counterValue =
 
     else
         False
+
+
+renderDiv : Bool -> Html Msg
+renderDiv status =
+    if status == False then
+        div [] [ text "Открыто" ]
+
+    else
+        text ""
 
 
 
