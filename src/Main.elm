@@ -36,8 +36,7 @@ type Msg
     = Increment
     | Decrement
     | Reset
-    | PleaseOpen
-    | PleaseClose
+    | ChangeStatus String
 
 
 update : Msg -> Model -> Model
@@ -52,11 +51,16 @@ update msg model =
         Reset ->
             { model | count = 0 }
 
-        PleaseOpen ->
-            { model | status = Opened }
+        ChangeStatus statusMsg ->
+            case statusMsg of
+                "Open" ->
+                    { model | status = Opened }
 
-        PleaseClose ->
-            { model | status = Closed }
+                "Close" ->
+                    { model | status = Closed }
+
+                _ ->
+                    { model | status = Closed }
 
 
 
@@ -76,8 +80,8 @@ view model =
             , button [ onClick Decrement ] [ text "-1" ]
             , hr [] []
             , button [ onClick Reset, disabled (ifResetDisabled model.count) ] [ text "reset" ]
-            , button [ onClick PleaseOpen ] [ text "open" ]
-            , button [ onClick PleaseClose ] [ text "close" ]
+            , button [ onClick (ChangeStatus "Open") ] [ text "open" ]
+            , button [ onClick (ChangeStatus "Close") ] [ text "close" ]
             , hr [] []
             , renderDiv model.status
             ]
