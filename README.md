@@ -1,15 +1,24 @@
-# Elm App
+# Elm Webinar #1
 
-The simple counter app with some additions (check commits) for Elm Webinar #1
+Пример счетчика с дополнениями (смотрите [коммиты](https://github.com/maxfarseer/elm-webinar-1/commits/master)) для вебинара по Elm
 
 ### Webinar video
 
-TBA
+_Будет добавлено позже_
 
 ### Webinar text
 
-TBA
+_Будет добавлено позже_
+
+### Подписывайся
+
+- [Schedule / Расписание на сайте](https://maxpfrontend.ru/raspisanie/)
+- [VK](http://vk.com/maxpfrontend)
+- [Telegram](https://t.me/maxpfrontend)
+- [YouTube](https://www.youtube.com/channel/UCqJyAVWwIqPWKEkfCSP1y4Q)
+- [Twitch](https://www.twitch.tv/maxpfrontend)
+- [Twitter](https://twitter.com/MaxPatsiansky)
 
 ### Misc
 
-This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
+Данный проект создан на базе [Create Elm App](https://github.com/halfzebra/create-elm-app).
