@@ -1,8 +1,8 @@
 module Main exposing (main)
 
 import Browser
-import Html exposing (Html, button, div, h1, img, text)
-import Html.Attributes exposing (src)
+import Html exposing (Html, button, div, h1, hr, img, text)
+import Html.Attributes exposing (disabled, src)
 import Html.Events exposing (onClick)
 
 
@@ -26,6 +26,7 @@ init =
 type Msg
     = Increment
     | Decrement
+    | Reset
 
 
 update : Msg -> Model -> Model
@@ -36,6 +37,9 @@ update msg model =
 
         Decrement ->
             { model | count = model.count - 1 }
+
+        Reset ->
+            { model | count = 0 }
 
 
 
@@ -53,6 +57,8 @@ view model =
             [ button [ onClick Increment ] [ text "+1" ]
             , div [] [ text <| String.fromInt model.count ]
             , button [ onClick Decrement ] [ text "-1" ]
+            , hr [] []
+            , button [ onClick Reset, disabled (model.count == 0) ] [ text "reset" ]
             ]
         ]
 
