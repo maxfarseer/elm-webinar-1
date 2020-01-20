@@ -58,9 +58,18 @@ view model =
             , div [] [ text <| String.fromInt model.count ]
             , button [ onClick Decrement ] [ text "-1" ]
             , hr [] []
-            , button [ onClick Reset, disabled (model.count == 0) ] [ text "reset" ]
+            , button [ onClick Reset, disabled (ifResetDisabled model.count) ] [ text "reset" ]
             ]
         ]
+
+
+ifResetDisabled : Int -> Bool
+ifResetDisabled counterValue =
+    if counterValue == 0 then
+        True
+
+    else
+        False
 
 
 
