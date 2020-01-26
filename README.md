@@ -4,7 +4,7 @@
 
 ### Видео
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iDkE6bJShMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Запись вебинара [здесь](https://youtu.be/iDkE6bJShMc)
 
 ### Текст
 
