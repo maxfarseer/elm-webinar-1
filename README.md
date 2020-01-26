@@ -2,13 +2,13 @@
 
 Пример счетчика с дополнениями (смотрите [коммиты](https://github.com/maxfarseer/elm-webinar-1/commits/master)) для вебинара по Elm
 
-### Webinar video
+### Видео
 
-_Будет добавлено позже_
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iDkE6bJShMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Webinar text
+### Текст
 
-_Будет добавлено позже_
+Конспект вебинара [здесь](https://maxpfrontend.ru/elm/elm-dlya-react-redux-razrabotchikov-elm-1-znakomimsya-s-elm/)
 
 ### Подписывайся
 
@@ -19,6 +19,6 @@ _Будет добавлено позже_
 - [Twitch](https://www.twitch.tv/maxpfrontend)
 - [Twitter](https://twitter.com/MaxPatsiansky)
 
-### Misc
+### Дополнительно
 
 Данный проект создан на базе [Create Elm App](https://github.com/halfzebra/create-elm-app).
